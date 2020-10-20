@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Annie's Favorite Foods</title>
+</head>
+  <h1 style="background-color:powderblue; font-family:verdana; text-align:center;">Annie's Favorite Foods</h1>
+
+  <!-- this scales the website to look good in any device-->
+  <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- this tells website the character set used-->
+
+  <style>
+  p {
+    clear: both;
+  }
+
+    #horizontalmenu li{
+      float: left;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow; hidden;
+      background-color: #333333;
+    }
+
+    #horizontalmenu a {
+      display:block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    #horizontalmenu a:hover {
+      background-color: #111111;
+    }
+  </style>
+  <body>
+    <div id="horizontalmenu">
+      <ul>
+        <li><a href="#C4">Ramen</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="#C5">Smoothie</a></li>
+        <li><a href="#C6">Ranking</a></li>
+      </ul>
+    </div>
+    <p></p>
+
+  <h2 style="background-color:powderblue; border:2px solid lightblue;">These foods are superior.</h2>
+  <h3 style="font-size:20px; background-color:hsl(300%, 76%, 72%);">Trust me.</h3>
+  <!-- hsl is hue saturation lightness -->
+  <h4 style="font-size:100%; background-color:rgba(100, 9, 71, 0.5);">Wow amazing. </h4>
+  <!-- you can also set colors like #ff0000 which is red bc red is max and the others are 00 -->
+
+  <!-- if you want to display ALL <p> or <h> elements a certain color, do this:
+  body {background-color: powderblue;}
+  <head>
+  <style>
+  h1   {color:blue;}
+  p    {color:red;}
+  </style>
+  </head>
+  <body> -->
+
+  <!-- bookmarks for if website very long -->
+  <h5 id="C4">Ramen</h2>
+
+  <img src="ramen.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+  <p style="color:red;">This is ramen.</p>
+  <hr />
+  <p title="I am a fake title"> This hover thing isn't<br />working. </p>
+  <hr />
+
+  <img src="bibimbap.jpg" alt="Bibimbap" width="328" height="128" />
+  <img src="bibimbap.jpg" alt="Bibimbap" style="width:128px;height:128px;" />
+  <!-- better to use style to determine width and height for proportions -->
+  <p><img src="bibimbap.jpg" alt="Coffee" style="float:right;width:42px;height:42px:" />
+    Notice this tiny bibimbap floating to the right.</p>
+  <pre>
+    Really
+    Really
+    Good
+  </pre>
+  <p>
+    Really
+    Really
+    Good
+  </p>
+  <a href="https://www.youtube.com/watch?v=iO3w-pobbPE"> Vegan food video. </a>
+  <!--target="_self" = opens doc in same place it was clicked
+      target="_blank" = opens in new <table>
+      target="_parent" = opens in parent frame
+      target="_top" = opens in full body of the window -->
+  <!--  local links (page within the same website) don't need the "https://www" part-->
+  <!-- to use image as a link, put <img> inside <a> tag:
+        <a href="default.asp"
+        <img src="smiley.gif" alt="HTML tutorial" styule="width:42px;height:42px;">
+        </a> -->
+
+  <!-- this sets default link colors (can also do background-color and text-decoration) -->
+  <style>
+  a:link {
+    color:green;
+  }
+
+  a:visited {
+    color:pink;
+  }
+
+  a:hover {
+    color:red;
+  }
+
+  a:active {
+    color:yellow;
+  }
+  </style>
+
+  <p><strong> This is sushi </strong></p>
+  <img src="sushi.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+  <p><i> This is orange chicken </i></p>
+  <img src="chicken.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+  <p><small> This is steamed buns </small></p>
+  <img src="baozi.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+  <p> These are <mark>potsickers</mark>. </p>
+  <p> One of my other favorite foods is <del>ice cream</del> <ins>mochi</ins>.</p>
+  <img src="mochi.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+  <p> This is CO<sub>2</sub> even though it isn't food. </p>
+  <p> This is 189<sup>2</sup> even though it isn't food. </p>
+
+  <p> Here is a quote about scones from foodnetwork.com:</p>
+  <blockquote cite="https://www.foodnetwork.com/fn-dish/recipes/easy-recipes-for-scones">
+    They're the perfect treat to enjoy with coffee or tea.
+  </blockquote>
+  <!--Remember that adding these quotes and abbreviations allows the browser to more easily navigate -->
+  <p>To achieve the best classic taste Katherine says she: <q> incorporated milk powder with the butter and cream.</q></p>
+  <p>The <abbr title="Foot Network">FN</abbr> was founded in 1993.</p>
+
+  <address>
+    Written by Katherine Lok.<br />
+  </address>
+
+  <a href="mailto:fangannie3321@gmail.com">Send email to ask Annie why she likes scones</a>
+  <button onclick="document.location='default.asp'">HTML Button Tutorial</button>
+
+  <a href="#C4"><br />Jump to Ramen</a>
+
+  <p><cite>Bingsu</cite> by someone in Korea.</p>
+  <img src="bingsu.jpg" alt="Image cannot be displayed" style="width:128px;height:128px;" />
+
+  <p><bdo dir="rtl">This text is from right to left.</bdo></p>
+
+  <!-- this is so that smth pops up when you click -->
+  <img src="tiramisu.jpg" alt="tiramisu" style="width:128px;height:128px" usemap="#testmap" />
+  <map name="testmap">
+    <area shape="circle" coords="50,50,44" onclick="myFunction()">
+  </map>
+  <script>
+  function myFunction() {
+    alert("You clicked on tiramisu, one of Annie's favs!");
+  }
+  </script>
+
+  <div style="background-image: url('macaron.jpg'); style="width:128px;height:128px;"">
+    <pre>
+      macaron
+      mAcaron
+      MAcaron
+      MaCarOn
+      MACaron
+      MacArON
+      MAcArOn
+      MACArOn
+      MACAROn
+      MACARoN
+      MACARON
+    </pre>
+    <!-- if you don't want background img to repeat type background-repeat: no-repeat;
+    to make sure the entire page is always covered set background-attachment: fixed;
+    to make sure the background img covers the entire thing, set background-size: cover -->
+  </div>
+
+  <!-- show diff images for diff screen sizes -->
+  <picture>
+    <source media="(min-width: 650px)" srcset="dalgona.jpg"
+    <img src="macaron">
+  </picture>
+
+  <div style="background-color:black;color:white;padding:20px;">This is avocado toast
+  <p><img src="avocadotoast.jpg" alt="avocadotoast" style="width:128px;height:128px"></p>
+  </div>
+
+  <h1>This is oatmeal</h1>
+    <p> Oatmeal is <span style="color:red;font-weight:bold">very</span> good. </p>
+    <img src="oatmeal.jpg" alt="oatmeal" style="width:128px;height:128px" />
+
+  <!-- the .food is a class and the stuff in the curly brackets defines the CSS properties-->
+  <!-- can have multiple classes, just create new .(class)-->
+
+  <!-- can also use ID (<h1 id="myHeader"My Header</h1>, (on diff line)#myHeader {...})
+  <!-- however iD can ONLY be used by one HTML element while class can be used whenever-->
+  <style>
+  .food {
+    background-color: lightblue;
+    color: white;
+    border: 2px lightblue;
+    margin: 20px;
+    padding: 20px;
+  }
+  </style>
+
+  <h5 id="C5">Smoothie</h2>
+  <div class="food">
+    <h2>This is a Banana Smoothie</h2>
+    <p>Banana Smoothies are very good.</p>
+    <img src="bananasmoothie.jpg" alt="Banana Smoothie" style="width:128px;height:128px" />
+  </div>
+
+  <div class="food">
+    <h2>This is a Strawberry Smoothie</h2>
+    <p>Strawberry Smoothies are very good.</p>
+    <img src="strawberrysmoothie.jpg" alt="Berry Smoothie" style="width:128px;height:128px" />
+  </div>
+
+  <div class="food">
+    <h2>This is a Green Smoothie</h2>
+    <p>Green Smoothies are very good.</p>
+    <img src="greensmoothie.jpg" alt="Green Smoothie" style="width:128px;height:128px" />
+  </div>
+
+  <h1 id="myHeader">Click this to see Annie's next favorite food!</h1>
+  <button onclick="displayResult()">See answer</button>
+
+  <script>
+  function displayResult() {
+    document.getElementById("myHeader").innerHTML = "It is cake!"
+  }
+  </script>
+  <p><img src="cake.jpg" alt="Cake" style="width:128px;height:128px" /></p>
+
+  <!-- iframes lets you open a website inside a website -->
+  <h2>This is a recipe for bomb cake</h2>
+  <iframe src="cake.jpg" name="iframe_a" height="300px" width="100%"
+  title="This is a cake recipe"></iframe>
+
+  <p><a href="https://sallysbakingaddiction.com/vanilla-cake/"
+  target="iframe_a">SallysBakingAddiction.com</a></p>
+
+  <p>This cake is 100 &#8364;</p> <!-- euro sign must be displayed this way -->
+
+  <!-- padding specifies the space between cell content and border -->
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    width=50%;
+  }
+  th {
+    text-align: left;
+  }
+  #to1 {
+    width: 100%;
+    background-color: lightblue;
+  }
+  #to1 th {
+    color: white;
+    background-color: black;
+  }
+  </style>
+
+  <table style="width:100%">
+    <caption> Calories of Annie's favorite foods </caption>
+    <tr> <!-- table row -->
+      <th>Food</th> <!-- table header-->
+      <th>Calories</th>
+    </tr>
+    <tr>
+      <td>Ramen</td> <!--table data/cell-->
+      <td>600 kcal</td>
+    </tr>
+    <tr>
+      <td>Bibimbap</td>
+      <td>400 kcal</td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- stylize specific tables with ids-->
+  <table id="to1">
+    <tr> <!-- table row -->
+      <th>Unhealthy Food</th> <!-- table header-->
+      <th>Many Calories</th>
+    </tr>
+    <tr>
+      <td>Orange Chicken</td> <!--table data/cell-->
+      <td>Tiramisu</td>
+    </tr>
+    <tr>
+      <td>2000 kcal</td>
+      <td>1800 kcal</td>
+    </tr>
+  </table>
+  <br>
+
+  <h5 id="C6">Ranking</h2>
+  <p> Honorable Mentions: </p>
+  <!-- can also do ul style="...disc;circle;square;none" -->
+  <ul style="list-style-type:square;">
+    <li>Oatmeal</li>
+    <li>Fruit</li>
+    <li>Cookies</li>
+  </ul>
+
+  <p> Honorable Mentions in order of how much Annie loves them: </p>
+  <!-- ol means orderered list-->
+  <!-- type="1" is for numbers, "A" is uppercase letters, "a" lowercase, "I" roman #s,"i" lowercase roman #s -->
+  <!-- you can also type start="50" to specify what number to start counting from-->
+  <ol type="1">
+    <li>Fruit</li>
+    <li>Oatmeal</li>
+    <li>Cookies</li>
+      <ul>
+        <li>White chocolate Macadamium Nut Cookies Specifically</li>
+  </ol>
+
+  <p> And why does she think this way? </p>
+  <dl>
+    <dt>Fruit</dt>
+    <dd>- so juicy and sweet but also guilt free!
+    <dt>Oatmeal</dt>
+    <dd>- warm and very customatizable
+    <dt>Cookies</dd>
+    <dd>- so flavorable but can't eat too many
+  </dl>
+</body>
+</html>
