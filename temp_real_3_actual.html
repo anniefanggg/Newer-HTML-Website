@@ -25,7 +25,8 @@
     <!-- navigation bar -->
     <div class="container-fluid" style="padding:0px">
       <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#f2f2f2">
-        <a class="navbar-brand"><em>Annie'sFavoriteFoods</em></a>
+        <!-- use vw instead of px for better scla
+        <a class="navbar-brand" style="font-size:1vw"><em>Annie'sFavoriteFoods</em></a>
         <!-- use list to create navigation bar -->
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -61,11 +62,11 @@
       <div class="card">
         <img src="background4.jpg" class="card-img-top" alt="Background">
         <div class="card-img-overlay text-left text-white align-items-center">
-          <p class="card-text" style="font-size:50px;padding-top:30px;padding-left:50px"><strong>A N N I E <br>F A N G ' S <br><em>F A V O R I T E</em><br> F O O D S</strong></p>
-          <p class="card-text" style="padding-left:50px"> <em>These foods are superior.</em></p>
-          <form class="form-inline ml-auto" action="/action)page.php" style="padding-left:50px">
-            <input class="form-control mr-sm-2" type="text" placeholder="Currently out of service">
-            <button class="btn" style="background-color:red;color:white" type="submit">Search</button>
+          <p class="card-text" style="font-size:4vw;padding-top:3vw;padding-left:5vw"><strong>A N N I E <br>F A N G ' S <br><em>F A V O R I T E</em><br> F O O D S</strong></p>
+          <p class="card-text" style="padding-left:5vw;font-size:1vw"> <em>These foods are superior.</em></p>
+          <form class="form-inline ml-auto" action="/action)page.php" style="padding-left:5vw">
+            <input class="form-control mr-sm-2" type="text" style="font-size:1vw" placeholder="Currently out of service">
+            <button class="btn" style="background-color:red;color:white;font-size:1vw" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -77,7 +78,8 @@
 
     <br>
     <!-- 3 column cards with images and also labels at bottom -->
-    <center><h4 id="C1">B I B I M B A P</h4></center>
+    <center><h2 id="C1">B I B I M B A P</h2>
+      Bibimbap is a Korean dish consisting of rice topped with different ingredeints such as sautéed vegetables, chili paste, and beef or other meat, sometimes with the addition of a raw or fried egg.</center><br>
       <div class="row row-cols-1 row-cols-md-3" style="padding-left:20px;padding-right:20px">
         <!-- first card/first column -->
         <div class="col mb-4">
@@ -113,14 +115,14 @@
     <br>
 
     <!-- card for text and card for img both taking up half the page -->
-    <center><h4 id="C2">R A M E N</h4></center>
+    <center><h2 id="C2">R A M E N</h2></center>
     <div class="row rows-cols-md-2" style="padding-left:40px;padding-right:40px">
       <div class="col mb-4">
         <div class="card">
           <div class="card-header">R A M E N</div>
           <div class="card-body">
             <h2 class="card-title">This is Ramen</h2>
-            <p class="card-text">Ramen is (in oriental cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables. Typical ramen ingredients include hand-made noodles, meat or vegetable broth, and an assortment of toppings.</p>
+            <p class="card-text" style="font-size:1vw">Ramen is (in oriental cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables. Typical ramen ingredients include hand-made noodles, meat or vegetable broth, and an assortment of toppings.</p>
           </div>
         </div>
       </div>
@@ -133,12 +135,13 @@
     <br>
 
     <!-- card for img and text on top -->
-    <center><h4 id="C3">S U S H I</h4></center>
+    <center><h2 id="C3">S U S H I</h2>
+      Sushi is a a Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish, vegetables, or egg. </center><br>
       <div class="card" style="color:red">
         <img src="sushi3.jpeg" class="card-img" alt="Sushi"></a>
           <div class="card-img-overlay">
-            <center><h1 class="card-title" style="padding-top:90px">S U S H I</h1>
-            <p class="card-text" style="font-size:20px"><strong>click to watch it being made.</strong></p>
+            <center><h1 class="card-title" style="padding-top:4vw;font-size:4vw">S U S H I</h1>
+            <p class="card-text" style="font-size:2vw"><strong>click to watch it being made.</strong></p>
             <!-- button that leads to video -->
             <a href="https://www.youtube.com/watch?v=TbB1lqdrlkc" class="btn" style="background-color:red;color:white">video</a>
           </div>
@@ -147,7 +150,8 @@
 
       <br>
       <!-- 3 column cards with images and also labels at bottom -->
-      <center><h4 id="C4">D U M P L I N G S</h4></center>
+      <center><h2 id="C4">D U M P L I N G S</h2>
+        Dumplings are small savory balls of dough (usually made with suet) which may be boiled, fried, or baked in a casserole. </center></br>
         <div class="row row-cols-1 row-cols-md-3" style="padding-left:20px;padding-right:20px">
           <!-- column/card 1 -->
           <div class="col mb-4">
@@ -183,8 +187,9 @@
 
       <br>
       <!-- carousel of cards with text and buttons overlayed on top -->
-  <center><h4 id="C5">S C O N E S</h4></center>
-    <div class="carousel slide" data-ride="carousel" style="max-width:800px;margin:auto">
+  <center><h2 id="C5">S C O N E S</h2>
+    Scones are small unsweetened or lightly sweetened biscuit-like cakes made from flour, fat, and milk and sometimes have added fruit.</center><br>
+    <div class="carousel slide" id="multi-item-example" data-ride="carousel" style="max-width:800px;margin:auto">
       <ol class="carousel-indicators">
         <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
         <li data-target="#multi-item-example" data-slide-to="1"></li>
@@ -193,26 +198,26 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="scones4.jpg" alt="scones">
-          <div class="carousel-caption" style="top:40%">
-            <h1>Abraham Lincoln says,</h1>
-            <p style="font-size:25px">"It is a delictable pastry for foggy Paris mornings.""</p>
+          <div class="carousel-caption" style="top:30%">
+            <h1 style="font-size:3vw">Abraham Lincoln says,</h1>
+            <p style="font-size:2vw">"It is a delictable pastry for foggy Paris mornings."</p>
             <a href="mailto:abrahamlincoln@gmail.com" class="btn" style="background-color:red;color:white">Email Lincoln</a>
           </div>
         </div>
         <!-- second card in carousel -->
         <div class="carousel-item">
           <img class="d-block w-100" src="scones3.jpg" alt="second slide">
-          <div class="carousel-caption" style="top:20%">
-            <h1>Katherine Lok says,</h1>
-            <blockquote="" style="font-size:25px" cite="https://www.foodnetwork.com/fn-dish/recipes/easy-recipes-for-scones">
+          <div class="carousel-caption" style="top:10%">
+            <h1 style="font-size:3vw">Katherine Lok says,</h1>
+            <blockquote="" style="font-size:1.5vw" cite="https://www.foodnetwork.com/fn-dish/recipes/easy-recipes-for-scones">
               They're the perfect treat to enjoy with coffee or tea.
             To achieve the best classic taste Katherine says she:
               <q>incorporated milk powder with the butter and cream.</q><br>
-            The <abbr title="Foot Network">FN</abbr> was founded in 1993.
+            The <abbr title="Food Network">FN</abbr> was founded in 1993.
             <address>
               Written by Katherine Lok.<br>
             </address>
-            <a href="mailto:newsletters@email.foodnetwork.com" class="btn" style="background-color:red;color:white">Email FN</a>
+            <a href="mailto:newsletters@email.foodnetwork.com" class="btn" style="background-color:red;color:white;font-size:1vw">Email FN</a>
           </div>
         </div>
       </div>
@@ -229,7 +234,8 @@
     <br>
 
     <!-- 3 column cards with images and also labels at bottom -->
-    <center><h4 id="C6">B I N G S U</h4>
+    <center><h2 id="C6">B I N G S U</h2>
+      Binsu is a Korean shaved ice dessert with sweet toppings such as chopped fruit, condensed milk, fruit syrup, and Azuki beans. The snack is highly popular in Korea.<br>
       <p>Click on each bingsu for more information.</p></center>
       <div class="row row-cols-1 row-cols-md-3" style="padding-left:20px;padding-right:20px">
         <!-- column/card 1 -->
@@ -267,22 +273,24 @@
     <br>
 
     <!-- card for img and text on top -->
-    <center><h4 id="C7">L E M O N C H I C K E N</h4></center>
+    <center><h2 id="C7">L E M O N C H I C K E N</h2>
+      Lemon Chicken consists of pieces of chicken meat that are sautéed or deep-fried and coated with a thick, sweet lemon-flavored sauce. </center><br>
       <div class="card" style="color:white">
         <img src="lemonchicken4.jpg" class="card-img" alt="lemon chicken"></a>
           <div class="card-img-overlay">
-            <center><h1 class="card-title" style="padding-top:80px">L E M O N C H I C K E N</h1>
-            <p class="card-text" style="font-size:20px"><strong>click to watch it being made.</strong></p>
+            <center><h1 class="card-title" style="padding-top:4vw;font-size:4vw">L E M O N C H I C K E N</h1>
+            <p class="card-text" style="font-size:2vw"><strong>click to watch it being made.</strong></p>
             <!-- button for video -->
-            <a href="https://www.youtube.com/watch?v=r5kJ-NcS-6A" class="btn" style="background-color:red;color:white">video</a>
+            <a href="https://www.youtube.com/watch?v=r5kJ-NcS-6A" class="btn" style="background-color:red;color:white;font-size:1vw">video</a>
           </div>
         </div>
       </div>
 
       <br>
       <!-- 3 column cards with images and also labels at bottom -->
-      <center><h4 id="C8">S M O O T H I E B O W L S</h4>
-        <p>Click on each smoothie bowl for video demonstrations.</p>
+      <center><h2 id="C8">S M O O T H I E B O W L S</h2>
+        A smoothie bowl starts with a thick blend of whole foods, such as frozen fruits, veggies and other mix-ins. The colorful base then gets poured into a bowl and is topped with toppings.<br>
+        <p>Click on each smoothie bowl for video demonstrations.</p></center>
         <div class="row row-cols-1 row-cols-md-3" style="padding-left:20px;padding-right:20px">
           <!-- column/card 1 -->
           <div class="col mb-4">
@@ -322,7 +330,8 @@
       <br>
 
     <!-- iframe to embed website and open a website inside a website -->
-    <center><h4 id="C9">T H E 1 0 0 € C A K E</h4></center>
+    <center><h2 id="C9">T H E 1 0 0 € C A K E</h2>
+      Cake is a soft, sweet food made from a mixture of flour, shortening, eggs, sugar, and other ingredients, and it is baked and decorated. <br>
     <div class="row">
       <div class="col-sm-12 pt-3" style="margin:auto">
         <center><iframe src="http://www.cannellevanille.com/gluten-free/plum-crumb-cake/" name="iframe_a" style="width:100%;height:600px" title="This is a cake recipe"></iframe></center>
@@ -331,7 +340,7 @@
     <br>
 
     <!-- use media to align images on left with corresponding text on right -->
-    <center><h4 id="C10">C A L O R I E S</h4>
+    <center><h2 id="C10">C A L O R I E S</h2>
     <p>of Annie's top 4 foods.</p></center>
     <br>
     <div class="row justify-content-center">
